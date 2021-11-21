@@ -1,5 +1,80 @@
-## Question 1
+# CONDITIONALS
 
+## Question 1
+def is_leap_year(x):
+    if x % 4 == 0:
+        if x % 100 == 0:
+            if x % 400 == 0:
+                print("leap year")
+                return 1
+            else:
+                print("not a leap year")
+                return 0
+        else:
+            print("leap year")
+            return 1
+    else:
+        print("not a leap year")
+        return 0
+
+## Question 2
+ def GCD(x, y):
+    gcd = 1
+    if x > y:
+        least = y
+    else:
+        least = x
+    for i in range(1, least + 1):
+        if (x % i == 0) and (y % i == 0):
+            gcd = i
+    return gcd
+ 
+## Question 3
+def find_max_sum(lst):
+    max_sum = -100
+    index = -1
+    prev = lst[0]
+    n = len(lst)
+    for i in range(1, n):
+        if (prev+lst[i]) > max_sum:
+            max_sum = (prev+lst[i])
+            index = i-1
+        prev = lst[i]
+    print("max sum:", max_sum, ", index:", index)
+    return max_sum, index
+ 
+ ## Question 4
+ def walking_along_coordinates(input_str):
+    lst = input_str.split()
+    movements = 0
+    num_of_r = 0
+    num_of_l = 0
+    num_of_u = 0
+    num_of_d = 0
+    for e in lst:
+        if e == "R":
+            num_of_r += 1
+            movements += 1
+        elif e == "L":
+            num_of_l += 1
+            movements += 1
+        elif e == "U":
+            num_of_u += 1
+            movements += 1
+        elif e == "D":
+            num_of_d += 1
+            movements += 1
+        else:
+            print("Input is not Valid")
+            return 0
+    axis = num_of_r - num_of_l
+    ordinate = num_of_u - num_of_d
+    print("latest position:", (axis, ordinate), ", number of movements:", movements)
+    return (axis, ordinate), movements
+
+# FOR-LOOP
+
+## Question 1
 odd_list = []
 even_list = []
 m = input().split()
@@ -14,7 +89,6 @@ print("odd numbers: ", odd_list)
 print("even numbers: ", even_list)
 
 ## Question 2
-
 def sum_of_evens(lst):
     result = 0
     for e in lst:
@@ -26,8 +100,9 @@ def sum_of_evens(lst):
 m = input().split()
 print(sum_of_evens(m))
 
-## Question 3
+# WHILE-LOOP
 
+## Question 1
 n = int(input())
 result = 1
 if n < 0:
@@ -38,8 +113,7 @@ else:
         n -= 1
     print(result)
 
-## Question 4
-
+## Question 2
 x = int(input())
 y = int(input())
 if y > x:
