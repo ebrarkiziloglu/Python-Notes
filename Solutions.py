@@ -72,6 +72,17 @@ def find_max_sum(lst):
     print("latest position:", (axis, ordinate), ", number of movements:", movements)
     return (axis, ordinate), movements
 
+ ## Question 5
+def tv_guide(age):
+    if age > 17:
+        print("This person can watch anything.")
+    elif age > 12:
+        print("This child can watch programs that are rated G or PG-13; but not NC-17.")
+    else:
+        print("This child can only watch programs that are rated G.")
+    return
+
+
 # FOR-LOOP
 
 ## Question 1
@@ -99,6 +110,7 @@ def sum_of_evens(lst):
   
 m = input().split()
 print(sum_of_evens(m))
+
 
 # WHILE-LOOP
 
