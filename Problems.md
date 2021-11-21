@@ -41,6 +41,17 @@ There is a bug moving along the points with integer coordinates on the coordinat
 | "R R U U D D D L L " | latest position: (0, -1) , number of movements: 9 |
 | "R R UUUDDD" | Input is not Valid |
 
+## Question 5
+
+In the US, TV programs are classified and labeled with some age restrictions. The three important labels are "Rated G" which means 'all ages admitted', "Rated PG-13" which means 'Some material may be inappropriate for children under 13', and "Rated NC-17" which means 'no one under 18 admitted'.
+According to these labels, for the given age of a person, write a function to determine which kind of programs they watch without any inappropriacy.
+
+|  Input| Output|
+| :------: | :------: |
+| 17 | This child can watch programs that are rated G or PG-13; but not NC-17. |
+| 4 | This child can only watch programs that are rated G. |
+| 25 | This person can watch anything. |
+
 
 # For-Loop
 
